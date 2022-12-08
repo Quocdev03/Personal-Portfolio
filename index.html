@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicons.png" type="image/x-icon" />
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Kursor Css -->
+    <link rel="stylesheet" href="./assets/css/kursor.css">
+
+    <!-- Title -->
+    <title>Personal Profile</title>
+
+</head>
+
+<!-- Body -->
+
+<body onkeydown="return false">
+
+    <!-- Layout Global -->
+    <div class="wrapper">
+
+        <!-- Profile Header -->
+        <header class="profile container">
+
+            <!-- Theme Button -->
+            <i class="ri-moon-line change-theme profile__social-link" id="theme-button"></i>
+
+            <!-- Profile Section -->
+            <div class="profile__container grid">
+
+                <!-- Profile Data -->
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="./assets/img/perfil.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="profile__name">Cao Chí Quốc</h2>
+
+                    <!-- Caption Animation -->
+                    <div class="profile__profession waviy">
+
+                        <span style="--i:1">I</span>
+                        <span style="--i:2">'</span>
+                        <span style="--i:3">M</span>
+                        <span style="--i:4"> </span>
+                        <span style="--i:5">A</span>
+                        <span style="--i:6"> </span>
+                        <span style="--i:7">s</span>
+                        <span style="--i:8">t</span>
+                        <span style="--i:9">u</span>
+                        <span style="--i:10">d</span>
+                        <span style="--i:11">e</span>
+                        <span style="--i:12">n</span>
+                        <span style="--i:13">t</span>
+
+                    </div>
+
+                    <ul class="profile__social">
+                        <a href="https://www.facebook.com/Cao.Chi.Quoc.Kull" target="_blank"
+                            class="profile__social-link">
+                            <i class="ri-facebook-circle-line profile__social-link-icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cao.chi.quoc/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line profile__social-link"></i>
+                        </a>
+                        <a href="https://github.com/Quocdev03" target="_blank" class="profile__social-link">
+                            <i class="ri-github-fill profile__social-link"></i>
+                        </a>
+                    </ul>
+
+                    <!-- Inner Animation -->
+                    <div class="loader">
+                        <div class="inner one"></div>
+                        <div class="inner two"></div>
+                        <div class="inner three"></div>
+                    </div>
+
+
+                </div>
+
+                <!-- Profile Info -->
+                <div class="profile__infor grid">
+                    <div class="profile__infor-group">
+                        <h3 class="profile__infor-number">6</h3>
+                        <p class="profile__infor-desc">Month of <br> work</p>
+                    </div>
+                    <div class="profile__infor-group">
+                        <h3 class="profile__infor-number">14</h3>
+                        <p class="profile__infor-desc">Completed <br>projects</p>
+                    </div>
+                    <div class="profile__infor-group">
+                        <h3 class="profile__infor-number">0</h3>
+                        <p class="profile__infor-desc">Satisfied <br> customers</p>
+                    </div>
+                </div>
+
+                <!-- Profile -->
+                <div class="profile__buttons">
+                    <a download="./assets/pdf/Cv.pdf" href="#!" class="button">
+                        Download CV
+                        <i class="ri-download-line"></i>
+                    </a>
+                    <div class="profile__buttons-small">
+                        <a href="https://zalo.me/0825218654" class="button button__small button__gray">
+                            <i class="ri-phone-line"></i>
+                        </a>
+                        <a href="https://www.facebook.com/messages/t/Cao.Chi.Quoc.Kull"
+                            class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+
+            <!-- Filters Section -->
+            <section class="filters container">
+
+                <!-- Filter Tabs -->
+                <ul class="filters__content">
+
+                    <!-- About Tab -->
+                    <button class="filters__button" data-target="#abouts">
+                        About
+                    </button>
+
+                    <!-- Project Tab -->
+                    <button class="filters__button" data-target="#projects">
+                        Project
+                    </button>
+
+                    <!-- Skill Tab -->
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+
+                    <!-- Edcucation Tab -->
+                    <button class="filters__button" data-target="#educations">
+                        Education
+                    </button>
+
+                </ul>
+
+                <!-- Filters Section -->
+                <div class="filters__sections">
+
+                    <!-- About Section -->
+                    <div class="project__about grid" data-content id="abouts">
+                        <div class="project__about">
+                            <div class="project__about-top">
+                                <div class="project__about-infor">
+                                    <div class="project__about-icon">
+                                        <a href="#!">
+                                            <lord-icon src="https://cdn.lordicon.com/kxrhwtdg.json" trigger="loop"
+                                                delay="1100" style="width:60px;height:60px">
+                                            </lord-icon>
+                                        </a>
+                                    </div>
+                                    <h3 class="project__about-text">About</h3>
+                                    <h3 class="project__about-infor-name">Cao Chí Quốc</h3>
+                                    <h3 class="project__about-infor-birth">6/4/2003</h3>
+                                </div>
+                                <div class="project__about-location">
+                                    <div class="project__about-icon">
+                                        <a href="#!">
+                                            <lord-icon src="https://cdn.lordicon.com/elzslyvl.json" trigger="loop"
+                                                delay="1100" style="width:60px;height:60px">
+                                            </lord-icon>
+                                        </a>
+                                    </div>
+                                    <h3 class="project__about-text">Location</h3>
+                                    <h3 class="project__about-location-name">Việt Nam</h3>
+                                    <h3 class="project__about-location-add">Đồng Tháp</h3>
+                                </div>
+                                <div class="project__about-contact">
+                                    <div class="project__about-icon">
+                                        <a href="#!">
+                                            <lord-icon src="https://cdn.lordicon.com/sdhhsgeg.json" trigger="loop"
+                                                delay="1100" style="width:60px;height:60px">
+                                            </lord-icon>
+                                        </a>
+                                    </div>
+                                    <h3 class="project__about-text">Contact</h3>
+                                    <h3 class="project__about-contact-phone">0825218654</h3>
+                                    <h3 class="project__about-contact-mail">Quocdev03@gmail.com</h3>
+                                </div>
+                            </div>
+                            <div class="project__about-footer">
+                                <p class="project__about-footer-desc">
+                                    Hi! My name is Cao Chi Quoc and I am single. I am 19 years old. I was born and
+                                    raised in Dong Thap province. Currently,
+                                    I am a Sophomore Information Technology student at University Ky Thuat - Cong
+                                    Nghe Can Tho. I am quite sensitive and sleeping late. I just like alone
+                                    and watch movies and having a cup of coffee every morning and play game for evening.
+                                </p>
+                                <span class="project__about-footer-thank">
+                                    Thank you for coming!
+                                </span>
+                                <a href="#!" class="project__about-footer-icon">
+                                    <lord-icon src="https://cdn.lordicon.com/ytuosppc.json" trigger="loop" delay="2500"
+                                        style="width:120px;height:80px">
+                                    </lord-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card Section -->
+                    <div class="project__card-main" data-content id="projects">
+                        <div class="project__card-main-tilte">
+                            <h2 class="project__card-main-heading">These are the projects that I have completed during
+                                my
+                                studies</h2>
+                            <lord-icon src="https://cdn.lordicon.com/jpqbjwbh.json" trigger="loop" delay="1100"
+                                style="width:85px;height:85px">
+                            </lord-icon>
+                        </div>
+                        <div class="project__content grid">
+                            <article class="project__card">
+                                <img src="./assets/img/project-1.png" class="project__img" alt="">
+                                <div class="project__modal">
+                                    <!-- <span class="project__sub">Web</span> -->
+                                    <a href="#!">
+                                        <h3 class="project__title">Personal Portfolio</h3>
+                                    </a>
+                                    <a href="#!">
+                                        <lord-icon src="https://cdn.lordicon.com/vpzjmdjv.json" trigger="loop"
+                                            delay="1100" style="width:45px;height:45px">
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="project__skills grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Frontend Developer</h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Basic</span>
+                                            <h4 class="skills__ex">60%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Advanced</span>
+                                            <h4 class="skills__ex">55%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">5%</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">0%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">0%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">GitHub</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">10%</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__area">
+                            <h3 class="skills__title">Backend Developer</h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">0%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Advanced</span>
+                                            <h4 class="skills__ex">0%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">0%</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Basic</span>
+                                            <h4 class="skills__ex">10%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">0%</h4>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line">
+                                        </i>
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                            <h4 class="skills__ex">25%</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers skill_animation">
+                            <div class="skill-box">
+                                <span class="title">HTML</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per html">
+                                        <span class="tooltip">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">CSS</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per css">
+                                        <span class="tooltip">50%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">JavaScript</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per javascript">
+                                        <span class="tooltip">5%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">ReactJs</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per react">
+                                        <span class="tooltip">1%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Sass</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per sass">
+                                        <span class="tooltip">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containers skill_animation">
+                            <div class="skill-box">
+                                <span class="title">Node Js</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per nodejs">
+                                        <span class="tooltip">1%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">PHP</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per php">
+                                        <span class="tooltip">1%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">MySQL</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per mysql">
+                                        <span class="tooltip">1%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Git</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per git">
+                                        <span class="tooltip">25%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Java</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per java">
+                                        <span class="tooltip">1%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="project__education" data-content id="educations">
+                        <div class="project__education-container left-container">
+                            <a href="#!">
+                                <lord-icon src="https://cdn.lordicon.com/atzilrvm.json" trigger="loop" delay="1100"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            </a>
+                            <div class="project__education-box">
+                                <small>2 - 2021</small>
+                                <h2>High School</h2>
+                                <p>.....</p>
+                                <span class="left-container-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="project__education-container right-container">
+                            <a href="#!">
+                                <lord-icon src="https://cdn.lordicon.com/atzilrvm.json" trigger="loop" delay="1100"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            </a>
+                            <div class="project__education-box">
+                                <small>7 - 7 - 2021</small>
+                                <h2>High School</h2>
+                                <p>Thi tốt nghiệp cấp 3 ..Q..</p>
+                                <span class="right-container-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="project__education-container left-container">
+                            <a href="#!">
+                                <lord-icon src="https://cdn.lordicon.com/atzilrvm.json" trigger="loop" delay="1100"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            </a>
+                            <div class="project__education-box">
+                                <small>9 - 2021</small>
+                                <h2>University</h2>
+                                <p>Bắt đầu học Công Nghệ - Thông Tin tại trường Đại Học Kỹ Thuật - Công Nghệ Cần Thơ.
+                                </p>
+                                <span class="left-container-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="project__education-container right-container">
+                            <a href="#!">
+                                <lord-icon src="https://cdn.lordicon.com/atzilrvm.json" trigger="loop" delay="1100"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            </a>
+                            <div class="project__education-box">
+                                <small>7 - 2022</small>
+                                <h2>Self Learning</h2>
+                                <p>Tìm hiểu và học code. Bắt đầu học HTML - CSS. Mình chủ yếu học tại F8
+                                    & Evondev. Và các pháp sư Ấn Độ.
+                                </p>
+                                <span class="right-container-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="project__education-container left-container">
+                            <a href="#!">
+                                <lord-icon src="https://cdn.lordicon.com/atzilrvm.json" trigger="loop" delay="1100"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            </a>
+                            <div class="project__education-box">
+                                <small>11 - 2022</small>
+                                <h2>Self Learning</h2>
+                                <p>Vài sau tháng mình đã học xong khoá HTML - CSS cơ bản và xem khá nhiều video Trick &
+                                    Tip, nhưng vẫn còn khá mơ hồ.</p>
+                                <span class="left-container-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="project__education-container right-container">
+                            <a href="#!">
+                                <lord-icon src="https://cdn.lordicon.com/atzilrvm.json" trigger="loop" delay="1100"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                            </a>
+                            <div class="project__education-box">
+                                <small>12 - 2022</small>
+                                <h2>Self Learning</h2>
+                                <p>Thời gian phải học ở trường rất nhiều, nhưng vẫn cố gắng tiếp tục học JavaScript.</p>
+                                <span class="right-container-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer container">
+            <span class="footer__coppy">
+                &#169; Quoc. All rigths reserved
+            </span>
+        </footer>
+
+    </div>
+
+    <!-- Cursor Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+
+    <!-- Sroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main Javascript -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Lord Icon -->
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+
+</body>
+
+</html>
